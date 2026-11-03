@@ -1,0 +1,14 @@
+﻿{
+  "Name": "graphic btn_PopupSearch…",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "LuNQWXKC1EiIbESNLaiEIw",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/LuNQWXKC1EiIbESNLaiEIw",
+  "ParentRef": "lpYaik0uEUO09nbSFTgKbg/uPhKRJPGU0SSkq9ZFY7J1A",
+  "Created": "2026-10-21T07:14:03.4951047Z",
+  "Updated": "2026-10-21T07:14:03.4951047Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

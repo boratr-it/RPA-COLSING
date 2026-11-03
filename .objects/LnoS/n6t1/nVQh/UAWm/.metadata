@@ -1,0 +1,13 @@
+﻿{
+  "Name": "이 사이트는 보안 연결을 지원하지 않습니다…",
+  "Type": "Element",
+  "Id": "UAWmKoI1y0K7a8HI4t781g",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/UAWmKoI1y0K7a8HI4t781g",
+  "ParentRef": "lpYaik0uEUO09nbSFTgKbg/nVQhxzQ45E6eID5rQmY3RQ",
+  "Created": "2026-10-28T08:51:04.9591637Z",
+  "Updated": "2026-10-28T08:51:04.9591637Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

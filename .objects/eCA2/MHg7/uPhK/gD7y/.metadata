@@ -1,0 +1,14 @@
+﻿{
+  "Name": "처리일자",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "gD7yION6dUm3C0wKYp7amA",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/gD7yION6dUm3C0wKYp7amA",
+  "ParentRef": "lpYaik0uEUO09nbSFTgKbg/uPhKRJPGU0SSkq9ZFY7J1A",
+  "Created": "2026-10-21T07:56:32.7627222Z",
+  "Updated": "2026-10-21T07:56:32.7627222Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

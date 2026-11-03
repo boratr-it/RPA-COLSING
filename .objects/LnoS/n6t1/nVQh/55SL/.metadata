@@ -1,0 +1,14 @@
+﻿{
+  "Name": "출하데이터_2026-09-01_2026-0…",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "55SLo8A7QkSeO43ppEyVHA",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/55SLo8A7QkSeO43ppEyVHA",
+  "ParentRef": "lpYaik0uEUO09nbSFTgKbg/nVQhxzQ45E6eID5rQmY3RQ",
+  "Created": "2026-10-27T04:19:06.2437427Z",
+  "Updated": "2026-10-27T04:19:06.2437427Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

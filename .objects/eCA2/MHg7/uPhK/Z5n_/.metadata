@@ -1,0 +1,13 @@
+﻿{
+  "Name": "검색결과 ( 0 건 )(1)",
+  "Type": "Element",
+  "Id": "Z5n_iFI8R02K7q_pmX1cJw",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/Z5n_iFI8R02K7q_pmX1cJw",
+  "ParentRef": "lpYaik0uEUO09nbSFTgKbg/uPhKRJPGU0SSkq9ZFY7J1A",
+  "Created": "2026-10-21T07:52:03.7130317Z",
+  "Updated": "2026-10-21T07:52:03.7130317Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

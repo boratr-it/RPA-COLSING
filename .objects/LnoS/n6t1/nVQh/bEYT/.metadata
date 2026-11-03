@@ -1,0 +1,13 @@
+﻿{
+  "Name": "안전하지 않은 파일 다운로드",
+  "Type": "Element",
+  "Id": "bEYT9PlkqE2jtaNw1mUYJQ",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/bEYT9PlkqE2jtaNw1mUYJQ",
+  "ParentRef": "lpYaik0uEUO09nbSFTgKbg/nVQhxzQ45E6eID5rQmY3RQ",
+  "Created": "2026-10-28T08:41:05.6432183Z",
+  "Updated": "2026-10-28T08:41:05.6432183Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="f16J6p-5R0GYCjrJ09YMuw" Reference="lpYaik0uEUO09nbSFTgKbg/55SLo8A7QkSeO43ppEyVHA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="datalab.boratr.co.kr/salesBw.asp" DesignTimeRectangle="266, 22, 80, 43" ElementVisibilityArgument="Interactive" Guid="34c5c47c-5ba1-419c-b80e-c17ec43849a6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAArCAYAAADv9A+vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAG5SURBVGhD7ZrNjYMwEEYpJMWkglRCJ0jcc8g1l9TALQWkhCiHFJGsNCuW8QZsY3uYtY3ZOTxFxD+SH59tsKjgDSAsp9L/EGiIQCYikEm4wBf+flnKSkeNSY2RgF/gFoX5IIx5XiChk80S4MAUuCDGm8fhxBQokPgIdFgWEIsjSSCTQWDAYikgmqv8CbzW0NZHeL4Bnuc9tE1n1rFAqRuTSjf659yPcDrsoNU4nR9D+SKBD+jqvp8abkZZAkbOsiTw1uzgcsVrssAOLv1NaLqhfi6JSAaBfXr20N3xOligSt1IvmrfC8U+zHaRwB05vUDblHYJHNWfiNNRIg+jm5OA5AL76TtJS3ACp1DqRgHXwbQCMU3GFCxRIJJQIC7++lrlFIhtyKTbWBIJ1B47ftcrZFbgikk3hVWKZlLhTOD6iSwQk+eSEiQwcCrry0NMsj3G6AQJ9PPTNqVAJP6rnI8SBeZ+lZtQosAR+Y+zShO4uuOswvkItBxXCxoWR5JAJqZAi+V/j8OJKVCRc2NZCwEO5gUSOtkchDH7BSrk4yIr4QIFKyKQiQhkIgKZiEAmIpCJCGQiApmIQCbftRuDLeKw0bkAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='최근 다운로드 기록' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target DesignTimeRectangle="8, 16, 402, 117" FuzzySelectorArgument="&lt;ctrl name='최근 다운로드 기록' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='pane' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='출하데이터_2026-09-01_2026-09-30.csv안전하지 않은 다운로드가 차단됨&amp;#xD;&amp;#xA;출하데이터_2026-09-01_2026-09-30.csv 안전하지 않은 다운로드가 차단됨 세부정보 더보기&amp;#xD;&amp;#xA;출하데이터_2026-09-01_2026-09-30.csv 유지&amp;#xD;&amp;#xA;0%&amp;#xD;&amp;#xA;0%' /&gt;" Guid="dc82d894-f625-49c4-90b5-754c49d14cb2" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b861a8694f914d9cf2177b7686037e6e.jpg" xmlns="">05NzojiExlUKyg_BPvhNPzQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

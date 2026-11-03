@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CEPQQoFjPES8p-H8GeQDQQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="1501, 22, 31, 31" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='btn_PopupSearch_Image' /&gt;" Guid="0dc4724c-9ab4-478b-9807-2cb2d0bf344c" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="57943437c15c065ec2e19e0f3a6bc222.jpg" xmlns="">01lpSyxy810mV6Y1KGkzNrg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

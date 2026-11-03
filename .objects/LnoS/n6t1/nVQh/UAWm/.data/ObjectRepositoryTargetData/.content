@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="d-vO7TnASUWMQBWKtU_QXQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="datalab.boratr.co.kr" DesignTimeRectangle="640, 107, 658, 313" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='이 사이트는 보안 연결을 지원하지 않습니다' role='pane' /&gt;&lt;ctrl name='이 사이트는 보안 연결을 지원하지 않습니다' role='alert' /&gt;&lt;ctrl idx='2' role='pane' /&gt;" Guid="8f7d2ff9-6b83-440f-952c-6f12a4ee9d7c" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='datalab.boratr.co.kr - Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="074eeeea4d63a107ce0a5796e1dcc115.jpg" xmlns="">0sg6WtungP0-WRHiJCtn_tw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome 다운로드 기록",
+  "Type": "App",
+  "Id": "RX8ZAwokGEWd9WkYCoMDUg",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/RX8ZAwokGEWd9WkYCoMDUg",
+  "Created": "2026-10-28T08:41:46.4041963Z",
+  "Updated": "2026-10-28T08:41:46.4041963Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

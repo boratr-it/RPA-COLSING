@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="AGA-oNEaSUSURnZfbCiVHA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="datalab.boratr.co.kr/salesBw.asp" DesignTimeRectangle="523, 735, 16, 16" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='checkbox' tag='INPUT' class='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0590c629-abcb-424e-a32e-04aa7c488c0c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="513, 724, 158, 37" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' 출하수량' parentid='metricGrid' tag='LABEL' type='' class='bw-metric' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='출하수량' /&gt;" Guid="8f1d0795-337b-4882-8a41-ade10d896ff8" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b8a4babd7c266b486e145dbf19818af8.jpg" xmlns="">0BY2H_WJXWEeUKLnItwtkdA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Check</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

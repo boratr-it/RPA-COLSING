@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kZs1HAZSwUaDfN20rYRAdg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="datalab.boratr.co.kr/salesBw.asp" DesignTimeRectangle="735, 381, 172, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='dateFrom' tag='INPUT' type='text' class='form-control form-control-sm' placeholder='YYYY-MM-DD' aaname='시작일' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="67822327-fb6a-47ab-b5d9-e385ecb0f7a5" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="735, 355, 38, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='queryForm' tag='LABEL' type='' class='form-label' aaname='시작일' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='시작일' /&gt;" Guid="baa84f83-4871-410b-8c63-519440849788" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7fb490736b6c1e7a05cac41a5c9368e5.jpg" xmlns="">0TM1UpunlBUeXUa0tWamEtw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

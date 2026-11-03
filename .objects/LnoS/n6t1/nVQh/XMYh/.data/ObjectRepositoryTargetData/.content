@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tym2-TjHH0WVsw8M3m1H9w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="datalab.boratr.co.kr" DesignTimeRectangle="674, 335, 144, 48" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='이 사이트는 보안 연결을 지원하지 않습니다' role='pane' /&gt;&lt;ctrl name='이 사이트는 보안 연결을 지원하지 않습니다' role='alert' /&gt;&lt;ctrl name='사이트로 이동' role='push button' /&gt;" Guid="d41505bf-717e-47ed-8061-124e27c8abe1" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='datalab.boratr.co.kr - Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="292cb14751692b394d198283530583ea.jpg" xmlns="">0b6nv9QtrYU2QEd040Z6E5g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

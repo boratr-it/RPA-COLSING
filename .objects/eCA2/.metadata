@@ -1,0 +1,12 @@
+﻿{
+  "Name": "ERP iU",
+  "Type": "App",
+  "Id": "eCA2D4ySIUqZbyR2_sQB1g",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/eCA2D4ySIUqZbyR2_sQB1g",
+  "Created": "2026-10-21T06:53:48.4246586Z",
+  "Updated": "2026-10-21T06:53:48.4246586Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

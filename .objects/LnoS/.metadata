@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Chrome 로그인  Bora DataLab",
+  "Type": "App",
+  "Id": "LnoS_68s30mYpgvjOlGoiA",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/LnoS_68s30mYpgvjOlGoiA",
+  "Created": "2026-10-21T08:07:19.3915289Z",
+  "Updated": "2026-10-21T08:07:19.3915289Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

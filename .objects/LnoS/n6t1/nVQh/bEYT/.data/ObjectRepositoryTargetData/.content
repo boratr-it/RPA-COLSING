@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PB8gPGocDkyAB_MpgoPGsg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="downloads" DesignTimeRectangle="1045, 400, 270, 46" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='다운로드 기록' role='document' /&gt;&lt;ctrl name='안전하지 않은 파일 다운로드' role='menu item' /&gt;" Guid="4f382d89-726c-400b-b1b2-27a4c7839987" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='다운로드 기록 - Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="28dc826f8a705e3df8f0cb41b3c471cb.jpg" xmlns="">01xCxhBgcNECUWLZ6Fln-dQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

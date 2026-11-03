@@ -1,0 +1,14 @@
+﻿{
+  "Name": "종료일",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "xnhwIL4bZEu8h8DTm1cO7w",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/xnhwIL4bZEu8h8DTm1cO7w",
+  "ParentRef": "lpYaik0uEUO09nbSFTgKbg/nVQhxzQ45E6eID5rQmY3RQ",
+  "Created": "2026-10-21T08:50:50.788766Z",
+  "Updated": "2026-10-21T08:50:50.788766Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

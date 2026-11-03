@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome 다운로드 기록",
+  "Type": "Screen",
+  "Id": "b8iS-b25TEaiimDndp66Mg",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/b8iS-b25TEaiimDndp66Mg",
+  "ParentRef": "lpYaik0uEUO09nbSFTgKbg/j-_s6AGzA0qfkg2A7feB9Q",
+  "Created": "2026-10-28T08:41:46.4451273Z",
+  "Updated": "2026-10-28T08:41:46.4451273Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

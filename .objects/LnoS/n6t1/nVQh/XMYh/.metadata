@@ -1,0 +1,14 @@
+﻿{
+  "Name": "사이트로 이동",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "XMYhnm_mgUi-wyo1YV82Ag",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/XMYhnm_mgUi-wyo1YV82Ag",
+  "ParentRef": "lpYaik0uEUO09nbSFTgKbg/nVQhxzQ45E6eID5rQmY3RQ",
+  "Created": "2026-10-28T08:51:19.4439325Z",
+  "Updated": "2026-10-28T08:51:19.4439325Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

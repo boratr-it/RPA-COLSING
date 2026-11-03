@@ -1,0 +1,13 @@
+﻿{
+  "Name": "STX20261000050",
+  "Type": "Element",
+  "Id": "Aiwd7Ac5KUSvcYqdeAyIKw",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/Aiwd7Ac5KUSvcYqdeAyIKw",
+  "ParentRef": "lpYaik0uEUO09nbSFTgKbg/uPhKRJPGU0SSkq9ZFY7J1A",
+  "Created": "2026-10-21T08:05:38.8192683Z",
+  "Updated": "2026-10-21T08:05:38.8192683Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

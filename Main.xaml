@@ -1,0 +1,1168 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ueabf="clr-namespace:UiPath.Excel.Activities.Business.Filter;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.Mail.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities.Business.Filter</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Net</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Enums</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Models</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Excel</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Files.Contracts</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities</x:String>
+      <x:String>UiPath.Sdk.Activities</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection.Contracts</x:String>
+      <x:String>UiPath.Sdk.Activities.DependencyInjection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.AsyncEnumerable</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1175,683" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd2:DataTable" Name="dtResult" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart sap:VirtualizedContainerService.HintSize="1181,649.6566666666666" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <av:Point x:Key="ShapeLocation">5,45</av:Point>
+          <av:Size x:Key="ShapeSize">50,50</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Flowchart.StartNode>
+        <x:Null />
+      </Flowchart.StartNode>
+      <FlowStep sap2010:WorkflowViewState.IdRef="FlowStep_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">35,155</av:Point>
+            <av:Size x:Key="ShapeSize">110,70</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence DisplayName="ERP 매출관리" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" AppliesTo="All" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="688,175" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="Neoweb" />
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="ERP iU" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="688,4862" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="5cedde03-529c-4497-a80d-886182e7f717" Version="V2" WindowResize="Maximize">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="686,4615" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="firstday" />
+                    <Variable x:TypeArguments="x:String" Name="lastday" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'BORATR'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Text="BORATR" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="397lx924tkmpGzE5fBwcwg" DesignTimeRectangle="1020, 371, 406, 39" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='tt' /&gt;" Guid="9ce2150e-e993-48a7-9198-568430197026" InformativeScreenshot="556f39642acdfc06720849fe6d8b6897.jpg" Reference="CIBIiZcdSEG37ROKkOvzkQ/mOQFpVP3bUWbr_UhkWNNtA" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '1000'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Text="1000" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="1020, 475, 406, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='tt' idx='2' role='editable text' /&gt;" Guid="9999de96-f542-4f5c-b9ec-dfff67cbbf3f" InformativeScreenshot="82c1519747bbfc16a2cf9af87ed1a0d1.jpg" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '20220923ed'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Text="20220923ed" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="1020, 578, 406, 39" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='tt' idx='3' role='editable text' /&gt;" Guid="ca537c36-1cf6-40e3-9af6-1f49413af22c" InformativeScreenshot="9bfceadd3a8bd0e0b7458b2c11007823.jpg" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'editable text tt1(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Text="0801" Timeout="5" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="hbkeg9L_skqcplkfwQf6XA" DesignTimeRectangle="1020, 682, 406, 39" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='tt1' /&gt;" Guid="44a0a221-5ef5-4330-a060-3dc8d74b5388" InformativeScreenshot="3e8ed8c2f287648dc28966421c68efd1.jpg" Reference="9gCPFtxwPEib0nvbvV420Q/m1pYQTjGnkirXG06PTW-AQ" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset Position="BottomLeft" X="59" Y="-10" />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="5" DisplayName="Click '0'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,194" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="1026, 771, 402, 52" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='progressbar' /&gt;" Guid="7b2f1143-6965-4c4c-b780-f0de2a8959fb" InformativeScreenshot="d430633f4c10a8f9728b4a214e921f36.jpg" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset Position="BottomLeft" X="143" Y="-19" />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'graphic btn_PopupSearch…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,194" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="CEPQQoFjPES8p-H8GeQDQQ" DesignTimeRectangle="1501, 22, 31, 31" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='btn_PopupSearch_Image' /&gt;" Guid="0dc4724c-9ab4-478b-9807-2cb2d0bf344c" InformativeScreenshot="57943437c15c065ec2e19e0f3a6bc222.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/LuNQWXKC1EiIbESNLaiEIw" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="652,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="650,245" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '검색결과 ( 0 건 )'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,185" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable ContentHash="ce9MpQU-XEyMH1kMiH_ksQ" DesignTimeRectangle="0, 0, 475, 118" ElementVisibilityArgument="Interactive" Guid="92ddcb74-7e1d-46e0-8449-01b204ce6c13" InformativeScreenshot="22c324571b4a1f74857ae39b279d67ee.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/K-kf5BuXoEufBZv1qrgUmg" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.PointOffset>
+                                <uix:PointOffset Position="BottomLeft" X="124" Y="-26" />
+                              </uix:TargetAnchorable.PointOffset>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '검색결과 ( 0 건 )(1)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,246" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Text="매출관리(" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="hGMO23A0NUyhEm5akGD-xQ" DesignTimeRectangle="0, 0, 475, 118" ElementVisibilityArgument="Interactive" Guid="c5e1af20-5f9c-48c1-870a-8612e0a722a1" InformativeScreenshot="13b1265ee7e094ff23494a39bc7e95de.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/Z5n_iFI8R02K7q_pmX1cJw" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset Position="BottomLeft" X="78" Y="-25" />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBetweenKeys="2" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,257" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Shortcuts="[d(hk)][k(Enter)][u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V5" />
+                  <Assign sap:VirtualizedContainerService.HintSize="652,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[firstday]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[New DateTime(Now.Year, Now.Month, 1).AddMonths(-1).ToString("yyyy-MM-dd")]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="652,175" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[lastday]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[New DateTime(Now.Year, Now.Month, 1).AddDays(-1).ToString("yyyy-MM-dd")]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '처리일자'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,246" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="SameAsCard" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Text="[firstday]" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="IY7J4dQ_cUmPQImEcZLYgg" DesignTimeRectangle="304, 171, 89, 26" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='P_SA_IVMNG' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='mDataArea' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd aaname='제품유형' cls='WindowsForms10.Window.*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' fuzzylevel:cls='0.0' /&gt;&lt;wnd ctrlname='oneGrid1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd aaname='제품유형' cls='WindowsForms10.Window.*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' fuzzylevel:cls='0.0' /&gt;&lt;wnd ctrlname='oneGridItem1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='bpPanelControl1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='dtp처리일자' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='_maskBoxStart' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="f1addfb2-4285-4810-8ae8-6bf440e6c2cd" InformativeScreenshot="69380793af33788aad42fadc777c3579.jpg" IsResponsive="True" Reference="lpYaik0uEUO09nbSFTgKbg/gD7yION6dUm3C0wKYp7amA" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="108, 174, 195, 20" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='P_SA_IVMNG' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='mDataArea' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd aaname='제품유형' cls='WindowsForms10.Window.*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' fuzzylevel:cls='0.0' /&gt;&lt;wnd ctrlname='oneGrid1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd aaname='제품유형' cls='WindowsForms10.Window.*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' fuzzylevel:cls='0.0' /&gt;&lt;wnd ctrlname='oneGridItem1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='bpPanelControl1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='m_lblDtIv' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='처리일자' /&gt;" Guid="5b4ad2f6-4928-4f42-b6b2-68225ae342a7" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '레이블'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,246" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="SameAsCard" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Text="[lastday]" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable ContentHash="0FcFsWsgAU21bIb2zzTOUA" DesignTimeRectangle="420, 171, 89, 26" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='P_SA_IVMNG' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='mDataArea' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd aaname='제품유형' cls='WindowsForms10.Window.*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' fuzzylevel:cls='0.0' /&gt;&lt;wnd ctrlname='oneGrid1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd aaname='제품유형' cls='WindowsForms10.Window.*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' fuzzylevel:cls='0.0' /&gt;&lt;wnd ctrlname='oneGridItem1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='bpPanelControl1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='dtp처리일자' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='_maskBoxEnd' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="3f233af8-b1ac-446d-b73d-8663a42450b0" InformativeScreenshot="662833ed144b67a889d6e9e96b26fdcc.jpg" IsResponsive="True" Reference="lpYaik0uEUO09nbSFTgKbg/eYI7ggAb0EK-IUsqefbPQA" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="394, 171, 25, 25" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='P_SA_IVMNG' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='mDataArea' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd aaname='제품유형' cls='WindowsForms10.Window.*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' fuzzylevel:cls='0.0' /&gt;&lt;wnd ctrlname='oneGrid1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd aaname='제품유형' cls='WindowsForms10.Window.*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' fuzzylevel:cls='0.0' /&gt;&lt;wnd ctrlname='oneGridItem1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='bpPanelControl1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='dtp처리일자' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='_label' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='~' /&gt;" Guid="b8f37b76-675b-415a-81c2-0cbd605f637a" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '마감담당'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,194" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="o0uwYPsgiEOWJUGrf7U81A" DesignTimeRectangle="734, 229, 204, 25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='P_SA_IVMNG' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='mDataArea' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd aaname='제품유형' cls='WindowsForms10.Window.*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' fuzzylevel:cls='0.0' /&gt;&lt;wnd ctrlname='oneGrid1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd aaname='제품유형' cls='WindowsForms10.Window.*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' fuzzylevel:cls='0.0' /&gt;&lt;wnd ctrlname='oneGridItem3' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='bpPanelControl8' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='bpNoEmp' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd cls='WindowsForms10.EDIT.*' fuzzylevel:cls='0.0' /&gt;" Guid="0318b08c-54e0-4801-a33e-1003c9de0632" InformativeScreenshot="09bb46558b845d1d116a968c8495016b.jpg" IsResponsive="True" Reference="lpYaik0uEUO09nbSFTgKbg/vl5ea548gUWD1NDYySNaVg" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="538, 231, 195, 20" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='P_SA_IVMNG' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='mDataArea' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd aaname='제품유형' cls='WindowsForms10.Window.*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' fuzzylevel:cls='0.0' /&gt;&lt;wnd ctrlname='oneGrid1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd aaname='제품유형' cls='WindowsForms10.Window.*' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' fuzzylevel:cls='0.0' /&gt;&lt;wnd ctrlname='oneGridItem3' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='bpPanelControl8' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='labelExt2' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='마감담당' /&gt;" Guid="27be1048-ef0d-404c-a7ff-8ca713ceb800" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayBefore="2" DelayBetweenKeys="2" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,257" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="HardwareEvents" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Shortcuts="[d(hk)][d(ctrl)]a[u(ctrl)][u(hk)][d(hk)][k(Del)][u(hk)]" Version="V5" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="180" DisplayName="Click 'push button btn_Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,194" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Timeout="200" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable ContentHash="JBnFMWKHdEmF6JHAipO_ug" DesignTimeRectangle="751, 16, 82, 45" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl automationid='btn_Search' /&gt;" Guid="d96f9e6d-e48b-4b13-b144-a5cbbd93812d" InformativeScreenshot="d01328de7f7142e4a392092b686b1903.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/L5C4gYNOeEiMMgjXU1blbA" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NCheckState DisplayName="Check App State '1'" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="652,1136" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="타겟이 나타남" sap:VirtualizedContainerService.HintSize="650,808" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Right-click 'STX20261000050'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,194" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable DesignTimeRectangle="193, 523, 125, 25" DesignTimeScaleFactor="1.25" ElementType="Cell" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='P_SA_IVMNG' /&gt;&lt;wnd ctrlname='mDataArea' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='splitContainer1' /&gt;&lt;wnd ctrlname='m_pnlHead' /&gt;&lt;wnd ctrlname='_flexH' /&gt;&lt;ctrl name='2' role='row' /&gt;&lt;ctrl name='NO_IV' role='cell' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='P_SA_IVMNG' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='mDataArea' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='splitContainer1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='m_pnlHead' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='_flexH' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;ctrl name='2' role='row' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='NO_IV' role='cell' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="91b4090a-0295-4be9-a3a4-e0dc2fc670c9" InformativeScreenshot="967bc2aca4ff89f4b9b8327ef5ac9504.jpg" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.PointOffset>
+                                <uix:PointOffset />
+                              </uix:TargetAnchorable.PointOffset>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '데이터 변환 엑셀출력(화면) 엑셀출력(화면…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,194" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable DesignTimeRectangle="0, 2, 235, 28" DesignTimeScaleFactor="1.25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='DropDown' role='popup menu' /&gt;&lt;ctrl name='데이터 변환' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='DropDown' role='popup menu' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='데이터 변환' role='menu item' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='데이터 변환&amp;#xD;&amp;#xA;엑셀출력(화면)&amp;#xD;&amp;#xA;엑셀출력(화면_Color포함)&amp;#xD;&amp;#xA;엑셀출력(코드)&amp;#xD;&amp;#xA;엑셀출력(코드_Color포함)&amp;#xD;&amp;#xA;엑셀출력(화면_숨겨진컬럼포함)&amp;#xD;&amp;#xA;엑셀출력(코드_숨겨진컬럼포함)&amp;#xD;&amp;#xA;CSV 출력&amp;#xD;&amp;#xA;텍스트 출력&amp;#xD;&amp;#xA;사용자정의 출력&amp;#xD;&amp;#xA;저장경로 설정&amp;#xD;&amp;#xA;C:\ERPUExport' /&gt;" Guid="97376308-2b74-4940-b3b6-a7a3a483cfd8" InformativeScreenshot="668a32058b389beada5b853b4e65f742.jpg" ScopeSelectorArgument="&lt;wnd aaname='DropDown' app='neoweb.exe' cls='WindowsForms10.Window.*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.PointOffset>
+                                <uix:PointOffset />
+                              </uix:TargetAnchorable.PointOffset>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="8" DisplayName="Click '엑셀출력(화면)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,194" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5cedde03-529c-4497-a80d-886182e7f717" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable DesignTimeRectangle="235, 5, 304, 27" DesignTimeScaleFactor="1.25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='DropDown' role='popup menu' /&gt;&lt;ctrl name='데이터 변환' role='menu item' /&gt;&lt;ctrl name='엑셀출력(화면)' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='DropDown' role='popup menu' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='데이터 변환' role='menu item' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='엑셀출력(화면)' role='menu item' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='엑셀출력(화면)' /&gt;" Guid="33d1aec9-ad43-46f4-b317-1fcc053038cb" InformativeScreenshot="970591a4a7beb7f5810576829338493b.jpg" ScopeSelectorArgument="&lt;wnd aaname='DropDown' app='neoweb.exe' cls='WindowsForms10.Window.*' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.PointOffset>
+                                <uix:PointOffset />
+                              </uix:TargetAnchorable.PointOffset>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" AppliesTo="All" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="616,166" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="Excel" />
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="타겟이 나타나지 않음" sap:VirtualizedContainerService.HintSize="650,90" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable ContentHash="SUCklcTjVUirVQt6EKlWbA" DesignTimeRectangle="100, 523, 43, 25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='P_SA_IVMNG' /&gt;&lt;wnd ctrlname='mDataArea' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='splitContainer1' /&gt;&lt;wnd ctrlname='m_pnlHead' /&gt;&lt;wnd ctrlname='_flexH' /&gt;&lt;ctrl name='2' role='row' /&gt;&lt;ctrl name='Column 0' role='row header' /&gt;" Guid="841e70d1-f010-4100-b55a-7a737e19a027" InformativeScreenshot="e9becc9e6bb98f6726c11581aff0ecd9.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/-HeOidCM7UqrI3KyrFyJKg" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.OCREngine>
+              <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                <ActivityFunc.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                </ActivityFunc.Argument>
+              </ActivityFunc>
+            </uix:NApplicationCard.OCREngine>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-10, -10, 1940, 1040" ContentHash="8ercm0qv1Um4saNaN1spWQ" FilePath="C:\ERPU\Browser\neoweb.exe" IconBase64="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" InformativeScreenshot="1fb44a620b1cdd7496952cfda8f5cd79.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/uPhKRJPGU0SSkq9ZFY7J1A" Selector="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" Version="V3" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </FlowStep>
+      <FlowStep sap2010:WorkflowViewState.IdRef="FlowStep_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">165,155</av:Point>
+            <av:Size x:Key="ShapeSize">110,70</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence DisplayName="출하리스트 다운" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome 로그인  Bora DataLab" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="688,4898" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V2" WindowResize="Maximize">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="686,4703" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NCheckState DisplayName="Check App State '이 사이트는 보안 연결을 지원하지 않습니다…'" EnableIfNotExists="False" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="652,582" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="타겟이 나타남" sap:VirtualizedContainerService.HintSize="650,245" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '사이트로 이동'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,185" sap2010:WorkflowViewState.IdRef="NClick_38" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr" ContentHash="tym2-TjHH0WVsw8M3m1H9w" DesignTimeRectangle="674, 335, 144, 48" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='이 사이트는 보안 연결을 지원하지 않습니다' role='pane' /&gt;&lt;ctrl name='이 사이트는 보안 연결을 지원하지 않습니다' role='alert' /&gt;&lt;ctrl name='사이트로 이동' role='push button' /&gt;" Guid="d41505bf-717e-47ed-8061-124e27c8abe1" InformativeScreenshot="292cb14751692b394d198283530583ea.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/XMYhnm_mgUi-wyo1YV82Ag" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='datalab.boratr.co.kr - Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="타겟이 나타나지 않음" sap:VirtualizedContainerService.HintSize="650,90" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr" ContentHash="d-vO7TnASUWMQBWKtU_QXQ" DesignTimeRectangle="640, 107, 658, 313" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='이 사이트는 보안 연결을 지원하지 않습니다' role='pane' /&gt;&lt;ctrl name='이 사이트는 보안 연결을 지원하지 않습니다' role='alert' /&gt;&lt;ctrl idx='2' role='pane' /&gt;" Guid="8f7d2ff9-6b83-440f-952c-6f12a4ee9d7c" InformativeScreenshot="074eeeea4d63a107ce0a5796e1dcc115.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/UAWmKoI1y0K7a8HI4t781g" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='datalab.boratr.co.kr - Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '이메일'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,246" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="SameAsCard" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Text="hbchoi@boratr.co.kr" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr" DesignTimeRectangle="1212, 463, 475, 58" DesignTimeScaleFactor="1.25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='email' class='form-control form-control-login' placeholder='이메일 주소를 입력하세요' aaname='이메일' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0fcb950a-b61f-4438-800b-54bf1014707d" InformativeScreenshot="24e8fba03f28400af6bf713c0cfa0226.jpg" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='로그인 | Bora DataLab' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="1212, 417, 475, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='form-label' aaname='이메일' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='이메일' /&gt;" Guid="28877154-3c4d-4234-8873-56d211aaa364" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '비밀번호'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,246" sap2010:WorkflowViewState.IdRef="NTypeInto_14" InteractionMode="SameAsCard" IsPassword="True" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Text="9097" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr" DesignTimeRectangle="1212, 598, 475, 58" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control form-control-login' placeholder='비밀번호를 입력하세요' aaname='비밀번호' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c9a48ac8-ed33-4db7-a219-dd396d4c43eb" InformativeScreenshot="ce4ecceec090097be028c961b32e3748.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='로그인 | Bora DataLab' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="1212, 551, 64, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='비밀번호' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='비밀번호' tag='LABEL' type='' class='form-label mb-0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='비밀번호' /&gt;" Guid="6b17080b-46cb-473b-8866-12016a431c16" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '로그인'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,194" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr" DesignTimeRectangle="1212, 716, 475, 56" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-primary w-100' aaname='                     로그인                 ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='로그인' /&gt;" Guid="0016cfaf-9e2d-42c5-b7cb-666ced278905" InformativeScreenshot="2efeb3fc9e6207b978e692de241a159b.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='로그인 | Bora DataLab' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '영업관리'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,194" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/dashboard.asp" DesignTimeRectangle="9, 481, 287, 56" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='                                                  영업관리                                              ' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                                                  영업관리                                              ' tag='BUTTON' type='button' class='sidebar-nav-item sidebar-nav-toggle' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='영업관리' /&gt;" Guid="eb1b5337-afea-4400-b972-8359e1c5bbe7" InformativeScreenshot="18e941a562ccfcf0624fdbeca8737a96.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='전사경영 대시보드 | Bora DataLab' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="69, 496, 64, 26" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='영업관리' class='sidebar-nav-text' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='영업관리' class='sidebar-nav-text' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='영업관리' /&gt;" Guid="696fedd4-bf71-4450-a002-d0a253658df9" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '출하리스트 조회'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,194" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/dashboard.asp" DesignTimeRectangle="62, 542, 234, 45" DesignTimeScaleFactor="1.25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='                             출하리스트 조회                         ' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                             출하리스트 조회                         ' tag='A' type='' class='sidebar-submenu-item ' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='출하리스트 조회' /&gt;" Guid="cca01e9a-642e-477e-8478-aebcfe15797c" InformativeScreenshot="e6c8f21452561ff13fdcea263455291e.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='전사경영 대시보드 | Bora DataLab' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <Assign sap:VirtualizedContainerService.HintSize="652,175" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[firstday]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[New DateTime(Now.Year, Now.Month, 1).AddMonths(-1).ToString("yyyy-MM-dd")]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="652,175" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[lastday]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[New DateTime(Now.Year, Now.Month, 1).AddDays(-1).ToString("yyyy-MM-dd")]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '시작일'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,246" sap2010:WorkflowViewState.IdRef="NTypeInto_16" InteractionMode="SameAsCard" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Text="[firstday]" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" ContentHash="kZs1HAZSwUaDfN20rYRAdg" DesignTimeRectangle="735, 381, 172, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='dateFrom' tag='INPUT' type='text' class='form-control form-control-sm' placeholder='YYYY-MM-DD' aaname='시작일' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="67822327-fb6a-47ab-b5d9-e385ecb0f7a5" InformativeScreenshot="7fb490736b6c1e7a05cac41a5c9368e5.jpg" IsResponsive="True" Reference="lpYaik0uEUO09nbSFTgKbg/J4Ea9JMps0Cq0kdbewC-Yg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="735, 355, 38, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='queryForm' tag='LABEL' type='' class='form-label' aaname='시작일' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='시작일' /&gt;" Guid="baa84f83-4871-410b-8c63-519440849788" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '종료일'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,246" sap2010:WorkflowViewState.IdRef="NTypeInto_17" InteractionMode="SameAsCard" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Text="[lastday]" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" ContentHash="SOVOVNvMfEqKvCLWS5aqzA" DesignTimeRectangle="917, 381, 173, 38" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='dateTo' tag='INPUT' type='text' class='form-control form-control-sm' placeholder='YYYY-MM-DD' aaname='종료일' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="09909d41-aea1-4cc0-93ea-c80cf23c277c" InformativeScreenshot="665db0bd1d075632161135b866ff4190.jpg" IsResponsive="True" Reference="lpYaik0uEUO09nbSFTgKbg/xnhwIL4bZEu8h8DTm1cO7w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="917, 355, 38, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='종료일' parentid='queryForm' tag='LABEL' type='' class='form-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='종료일' /&gt;" Guid="4e974aae-a9be-4b20-baa1-4716f7e2aab1" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                  </uix:NTypeInto>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="652,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="650,245" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '버튼'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,185" sap2010:WorkflowViewState.IdRef="NClick_29" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" DesignTimeRectangle="456, 459, 34, 32" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='월' parentid='bwShell' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='월' parentid='bwShell' tag='BUTTON' type='' class='bw-chip active' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='월' /&gt;" Guid="1ff5538f-8aba-40b4-a3c4-670b430b40e7" InformativeScreenshot="7379080b59b86522c5c50dabf312af9c.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.PointOffset>
+                                <uix:PointOffset />
+                              </uix:TargetAnchorable.PointOffset>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="652,57" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="650,245" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '거래처'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,185" sap2010:WorkflowViewState.IdRef="NClick_30" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" DesignTimeRectangle="456, 489, 62, 32" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='거래처' parentid='bwShell' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='거래처' parentid='bwShell' tag='BUTTON' type='' class='bw-chip' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='거래처' /&gt;" Guid="fd986e44-4a54-4973-bd33-d6c5daa10b02" InformativeScreenshot="4093d5525533318e666b31642de880ac.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.PointOffset>
+                                <uix:PointOffset />
+                              </uix:TargetAnchorable.PointOffset>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '과세/면세'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,194" sap2010:WorkflowViewState.IdRef="NClick_31" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" DesignTimeRectangle="430, 618, 81, 32" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='과세/면세' class='bw-chip' parentid='bwShell' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='과세/면세' class='bw-chip' parentid='bwShell' tag='BUTTON' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='과세/면세' /&gt;" Guid="5040c286-ed9d-443c-aa9e-f9ca060bd7c3" InformativeScreenshot="1aa92c0c9693408cfcd55292fa6f1c4f.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="652,57" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="650,246" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'unchecked'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,186" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                          <uix:NCheck.Target>
+                            <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" DesignTimeRectangle="359, 627, 16, 16" DesignTimeScaleFactor="1.25" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='checkbox' class='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="cf8756ba-8e46-452e-8a6c-84a711af5ce2" InformativeScreenshot="31dd17db3fb0011957300914868569e4.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="349, 616, 158, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='metricGrid' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='metricGrid' tag='LABEL' type='' class='bw-metric' aaname=' 출하금액' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='출하금액' /&gt;" Guid="026b5b1b-f946-4f16-a968-84a28c616200" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                              <uix:TargetAnchorable.PointOffset>
+                                <uix:PointOffset />
+                              </uix:TargetAnchorable.PointOffset>
+                            </uix:TargetAnchorable>
+                          </uix:NCheck.Target>
+                        </uix:NCheck>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                  <uix:NCheck Action="[UiPath.UIAutomationNext.Enums.NCheckType.Uncheck]" DisplayName="Check/Uncheck 'unchecked'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,195" sap2010:WorkflowViewState.IdRef="NCheck_4" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                    <uix:NCheck.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" ContentHash="AGA-oNEaSUSURnZfbCiVHA" DesignTimeRectangle="523, 735, 16, 16" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='checkbox' tag='INPUT' class='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0590c629-abcb-424e-a32e-04aa7c488c0c" InformativeScreenshot="b8a4babd7c266b486e145dbf19818af8.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/wMs02jliTUeA1elkMbA4kg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="513, 724, 158, 37" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' 출하수량' parentid='metricGrid' tag='LABEL' type='' class='bw-metric' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='출하수량' /&gt;" Guid="8f1d0795-337b-4882-8a41-ade10d896ff8" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheck.Target>
+                  </uix:NCheck>
+                  <uix:NCheck Action="[UiPath.UIAutomationNext.Enums.NCheckType.Uncheck]" DisplayName="Check/Uncheck 'checked'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,195" sap2010:WorkflowViewState.IdRef="NCheck_5" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                    <uix:NCheck.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" ContentHash="5dztgf2ScEe_h0mzufpMag" DesignTimeRectangle="523, 778, 16, 16" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='checkbox' tag='INPUT' class='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d6d5ae08-ba47-4b54-b98c-b81b0961c971" InformativeScreenshot="72071fc97afe3942540bfd6a6df6b275.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/RQ4N3dlVIUarHQPjx-TiMA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="513, 768, 158, 37" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' 이익률' parentid='metricGrid' tag='LABEL' type='' class='bw-metric' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='이익률' /&gt;" Guid="24d59ee4-6dc8-4816-b4fe-89945fbdbea6" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NCheck.Target>
+                  </uix:NCheck>
+                  <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'unchecked'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,195" sap2010:WorkflowViewState.IdRef="NCheck_2" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                    <uix:NCheck.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" DesignTimeRectangle="359, 756, 16, 17" DesignTimeScaleFactor="1.25" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='7' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='checkbox' tag='INPUT' class='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4c1b3769-e4e2-406e-a801-e4f3c06400d0" InformativeScreenshot="a8b431c51cb9b128fa3218e7034e43a3.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="349, 746, 158, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' 부가세' parentid='metricGrid' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' 부가세' parentid='metricGrid' tag='LABEL' type='' class='bw-metric' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='부가세' /&gt;" Guid="e24fc3d3-6df2-489f-abe8-47ebb39e3879" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NCheck.Target>
+                  </uix:NCheck>
+                  <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'unchecked'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,195" sap2010:WorkflowViewState.IdRef="NCheck_3" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                    <uix:NCheck.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" DesignTimeRectangle="523, 756, 16, 17" DesignTimeScaleFactor="1.25" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='8' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='checkbox' tag='INPUT' class='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8b724a2d-bde6-4318-b062-3af4127991ee" InformativeScreenshot="b61d40c1a2a0e59dbd4fc30649d4f335.jpg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="513, 746, 158, 37" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' 합계금액' parentid='metricGrid' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' 합계금액' parentid='metricGrid' tag='LABEL' type='' class='bw-metric' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='합계금액' /&gt;" Guid="43fcf882-d180-4747-b368-adabe6ce691e" SearchSteps="FuzzySelector" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                        <uix:TargetAnchorable.PointOffset>
+                          <uix:PointOffset />
+                        </uix:TargetAnchorable.PointOffset>
+                      </uix:TargetAnchorable>
+                    </uix:NCheck.Target>
+                  </uix:NCheck>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click '조회'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,194" sap2010:WorkflowViewState.IdRef="NClick_32" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" ContentHash="ZysU09o7eE-_fO1OtoJhSg" DesignTimeRectangle="1700, 381, 77, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='runBtn' tag='BUTTON' /&gt;" Guid="fdd4506f-385f-4c11-b809-7e7f94c9734e" InformativeScreenshot="40702dce410448354b1ba2d0fd24d4f3.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/QPaIvvbfxkWrsZA81ZQIMQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click 'CSV'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,194" sap2010:WorkflowViewState.IdRef="NClick_33" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" ContentHash="dRbqfBDzk0ybu8H636XGhQ" DesignTimeRectangle="1799, 448, 77, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='csvBtn' tag='BUTTON' /&gt;" Guid="0851dda2-50c7-40ef-842a-078df5154d06" InformativeScreenshot="a319f29396a394580f52780211f248cf.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/NqpiJCLhP0O8VLnArh_6DQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='출하리스트 조회 | Bora DataLab' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ui:SetToClipboard DisplayName="Set To Clipboard" sap:VirtualizedContainerService.HintSize="652,92" sap2010:WorkflowViewState.IdRef="SetToClipboard_1" Text="C:\Users\보라티알\Documents\UiPath\출하리스트" />
+                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="3" DelayBetweenKeys="1" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,278" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" InteractionMode="HardwareEvents" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Shortcuts="[d(hk)][d(alt)]d[u(alt)][u(hk)][d(hk)][d(ctrl)]v[u(ctrl)][u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V5" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click '저장(&amp;S)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="652,194" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" ContentHash="yvUMcTk6e0qXt8_cUnPAPg" DesignTimeRectangle="1021, 765, 110, 33" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='저장(&amp;amp;S)' /&gt;" Guid="49b1ae1d-db98-4983-be18-9710192b072c" InformativeScreenshot="29c8a851d89ee2dd6149a34bf23f5431.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/S01kpmfatkq_buYZ-KPl8w" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='다른 이름으로 저장' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="652,48" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="무시된 액티비티" sap:VirtualizedContainerService.HintSize="650,245" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="2" DisplayName="Click '출하데이터_2026-09-01_2026-0…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="616,185" sap2010:WorkflowViewState.IdRef="NClick_39" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31a72f66-10af-4692-9678-6a34be6a02cf" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="datalab.boratr.co.kr/salesBw.asp" ContentHash="f16J6p-5R0GYCjrJ09YMuw" DesignTimeRectangle="266, 22, 80, 43" ElementVisibilityArgument="Interactive" Guid="34c5c47c-5ba1-419c-b80e-c17ec43849a6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFAAAAArCAYAAADv9A+vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAG5SURBVGhD7ZrNjYMwEEYpJMWkglRCJ0jcc8g1l9TALQWkhCiHFJGsNCuW8QZsY3uYtY3ZOTxFxD+SH59tsKjgDSAsp9L/EGiIQCYikEm4wBf+flnKSkeNSY2RgF/gFoX5IIx5XiChk80S4MAUuCDGm8fhxBQokPgIdFgWEIsjSSCTQWDAYikgmqv8CbzW0NZHeL4Bnuc9tE1n1rFAqRuTSjf659yPcDrsoNU4nR9D+SKBD+jqvp8abkZZAkbOsiTw1uzgcsVrssAOLv1NaLqhfi6JSAaBfXr20N3xOligSt1IvmrfC8U+zHaRwB05vUDblHYJHNWfiNNRIg+jm5OA5AL76TtJS3ACp1DqRgHXwbQCMU3GFCxRIJJQIC7++lrlFIhtyKTbWBIJ1B47ftcrZFbgikk3hVWKZlLhTOD6iSwQk+eSEiQwcCrry0NMsj3G6AQJ9PPTNqVAJP6rnI8SBeZ+lZtQosAR+Y+zShO4uuOswvkItBxXCxoWR5JAJqZAi+V/j8OJKVCRc2NZCwEO5gUSOtkchDH7BSrk4yIr4QIFKyKQiQhkIgKZiEAmIpCJCGQiApmIQCbftRuDLeKw0bkAAAAASUVORK5CYII=" InformativeScreenshot="b861a8694f914d9cf2177b7686037e6e.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/55SLo8A7QkSeO43ppEyVHA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='최근 다운로드 기록' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="8, 16, 402, 117" FuzzySelectorArgument="&lt;ctrl name='최근 다운로드 기록' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='' role='pane' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:fulltext='출하데이터_2026-09-01_2026-09-30.csv안전하지 않은 다운로드가 차단됨&amp;#xD;&amp;#xA;출하데이터_2026-09-01_2026-09-30.csv 안전하지 않은 다운로드가 차단됨 세부정보 더보기&amp;#xD;&amp;#xA;출하데이터_2026-09-01_2026-09-30.csv 유지&amp;#xD;&amp;#xA;0%&amp;#xD;&amp;#xA;0%' /&gt;" Guid="dc82d894-f625-49c4-90b5-754c49d14cb2" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.OCREngine>
+              <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                <ActivityFunc.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                </ActivityFunc.Argument>
+              </ActivityFunc>
+            </uix:NApplicationCard.OCREngine>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="GwcAB7zCHEeFfksHIyhB5g" IconBase64="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" InformativeScreenshot="f2f9dee97ba060bfab186d29615934bc.jpg" Reference="lpYaik0uEUO09nbSFTgKbg/nVQhxzQ45E6eID5rQmY3RQ" Selector="&lt;html app='chrome.exe' title='로그인 | Bora DataLab' /&gt;" Url="http://datalab.boratr.co.kr/" Version="V3" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+        </Sequence>
+      </FlowStep>
+      <FlowStep sap2010:WorkflowViewState.IdRef="FlowStep_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">305,155</av:Point>
+            <av:Size x:Key="ShapeSize">110,70</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence DisplayName="부가세 5000" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="filepath" />
+            <Variable x:TypeArguments="x:String" Name="copyfilepath" />
+            <Variable x:TypeArguments="x:String" Name="firstday" />
+            <Variable x:TypeArguments="x:String" Name="lastday" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="616,175" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[filepath]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[New System.IO.DirectoryInfo("C:\ERPUEXPORT").GetFiles("*.xls").OrderByDescending(Function(f) f.LastWriteTime).First().FullName]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="616,175" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[copyfilepath]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[System.IO.Path.Combine("C:\Users\보라티알\Documents\UiPath\출하리스트", System.IO.Path.GetFileName(filepath))]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ui:CopyFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[copyfilepath]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="616,224" sap2010:WorkflowViewState.IdRef="CopyFile_1" Path="[filepath]" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="616,175" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;파일 복사 완료&quot;]" />
+          <ui:InvokeCode ContinueOnError="{x:Null}" Code="If System.IO.File.Exists(filepath) Then&#xA;&#xA;    Dim attr As System.IO.FileAttributes = System.IO.File.GetAttributes(filepath)&#xA;&#xA;    If (attr And System.IO.FileAttributes.ReadOnly) = System.IO.FileAttributes.ReadOnly Then&#xA;        System.IO.File.SetAttributes(filepath, attr And Not System.IO.FileAttributes.ReadOnly)&#xA;    End If&#xA;&#xA;    Dim lockFile As String = System.IO.Path.Combine(&#xA;        System.IO.Path.GetDirectoryName(filepath),&#xA;        &quot;~$&quot; &amp; System.IO.Path.GetFileName(filepath)&#xA;    )&#xA;&#xA;    If System.IO.File.Exists(lockFile) Then&#xA;        System.IO.File.Delete(lockFile)&#xA;    End If&#xA;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="616,403" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+            <ui:InvokeCode.Arguments>
+              <InArgument x:TypeArguments="x:String" x:Key="filepath">[filepath]</InArgument>
+            </ui:InvokeCode.Arguments>
+          </ui:InvokeCode>
+          <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="616,5024" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+            <ueab:ExcelProcessScopeX.Body>
+              <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="522,4954" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ueab:ExcelApplicationCard DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="488,4894" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[copyfilepath]">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="486,4674" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:Int32" Name="lastrow" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:FilterX ClearFilter="False" ColumnName="VAT구분" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="452,321" sap2010:WorkflowViewState.IdRef="FilterX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]">
+                            <ueab:FilterX.FilterArgument>
+                              <ueabf:FilterArgument Mode="Basic">
+                                <ueabf:FilterArgument.AdvancedFiltersArgument>
+                                  <ueabf:AdvancedFilterArgument LogicalOperator="And">
+                                    <ueabf:AdvancedFilterArgument.Condition1>
+                                      <ueabf:AdvancedFilterCondition Operator="NONE">
+                                        <ueabf:AdvancedFilterCondition.Value>
+                                          <InArgument x:TypeArguments="x:String" />
+                                        </ueabf:AdvancedFilterCondition.Value>
+                                      </ueabf:AdvancedFilterCondition>
+                                    </ueabf:AdvancedFilterArgument.Condition1>
+                                    <ueabf:AdvancedFilterArgument.Condition2>
+                                      <ueabf:AdvancedFilterCondition Operator="NONE">
+                                        <ueabf:AdvancedFilterCondition.Value>
+                                          <InArgument x:TypeArguments="x:String" />
+                                        </ueabf:AdvancedFilterCondition.Value>
+                                      </ueabf:AdvancedFilterCondition>
+                                    </ueabf:AdvancedFilterArgument.Condition2>
+                                  </ueabf:AdvancedFilterArgument>
+                                </ueabf:FilterArgument.AdvancedFiltersArgument>
+                                <ueabf:FilterArgument.BasicFiltersArgument>
+                                  <ueabf:BasicFilterArgument>
+                                    <ueabf:BasicFilterArgument.BasicFilters>
+                                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                                        <InArgument x:TypeArguments="x:String">과세(세금계산서)</InArgument>
+                                      </scg:List>
+                                    </ueabf:BasicFilterArgument.BasicFilters>
+                                  </ueabf:BasicFilterArgument>
+                                </ueabf:FilterArgument.BasicFiltersArgument>
+                              </ueabf:FilterArgument>
+                            </ueab:FilterX.FilterArgument>
+                          </ueab:FilterX>
+                          <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="452,325" sap2010:WorkflowViewState.IdRef="InsertColumnX_1" NewColumnName="10%" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" RelativeColumnName="전표유형" RelativePosition="Before" />
+                          <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="452,325" sap2010:WorkflowViewState.IdRef="InsertColumnX_2" NewColumnName="10%-VAT" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" RelativeColumnName="합계" RelativePosition="Before" />
+                          <ueab:DeleteColumnX ColumnName="전표유형" DisplayName="Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="452,222" sap2010:WorkflowViewState.IdRef="DeleteColumnX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" />
+                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;M3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="452,222" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[&quot;=L3*0.1&quot;]" />
+                          <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="AutoFillX_1" StartRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;M3&quot;)]" />
+                          <ueab:WriteCellX Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;O3&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="452,222" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[&quot;=M3-N3&quot;]" />
+                          <ueab:AutoFillX DisplayName="Auto Fill" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="AutoFillX_2" StartRange="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;O3&quot;)]" />
+                          <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="452,226" sap2010:WorkflowViewState.IdRef="DeleteRowsX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" RowPositions="2" />
+                          <ueab:FindFirstLastDataRowX FirstRowIndex="{x:Null}" BlankRowsToSkip="1" ColumnName="10%-VAT" ConfigureLastRowAs="LastPopulatedRow" DisplayName="Find First/Last Data Row" FirstRowOffset="0" HasHeaders="True" sap:VirtualizedContainerService.HintSize="452,273" sap2010:WorkflowViewState.IdRef="FindFirstLastDataRowX_2" LastRowIndex="[lastrow]" LastRowOffset="0" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A1:O65536&quot;)]" VisibleRowsOnly="False" />
+                          <ueab:FormatRangeX Alignment="{x:Null}" Font="{x:Null}" DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="FormatRangeX_2" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;O1:O&quot; + lastRow.ToString)]">
+                            <ueab:FormatRangeX.Format>
+                              <ueab:CustomFormat FormatAsString="0" />
+                            </ueab:FormatRangeX.Format>
+                          </ueab:FormatRangeX>
+                          <ueab:FilterX ClearFilter="False" ColumnName="10%-VAT" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="452,321" sap2010:WorkflowViewState.IdRef="FilterX_4" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;O1:O&quot; + lastRow.ToString)]">
+                            <ueab:FilterX.FilterArgument>
+                              <ueabf:FilterArgument Mode="Advanced">
+                                <ueabf:FilterArgument.AdvancedFiltersArgument>
+                                  <ueabf:AdvancedFilterArgument LogicalOperator="And">
+                                    <ueabf:AdvancedFilterArgument.Condition1>
+                                      <ueabf:AdvancedFilterCondition Operator="GTE" Value="5000" />
+                                    </ueabf:AdvancedFilterArgument.Condition1>
+                                    <ueabf:AdvancedFilterArgument.Condition2>
+                                      <ueabf:AdvancedFilterCondition Operator="LTE" Value="-5000" />
+                                    </ueabf:AdvancedFilterArgument.Condition2>
+                                  </ueabf:AdvancedFilterArgument>
+                                </ueabf:FilterArgument.AdvancedFiltersArgument>
+                                <ueabf:FilterArgument.BasicFiltersArgument>
+                                  <ueabf:BasicFilterArgument>
+                                    <ueabf:BasicFilterArgument.BasicFilters>
+                                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                    </ueabf:BasicFilterArgument.BasicFilters>
+                                  </ueabf:BasicFilterArgument>
+                                </ueabf:FilterArgument.BasicFiltersArgument>
+                              </ueabf:FilterArgument>
+                            </ueab:FilterX.FilterArgument>
+                          </ueab:FilterX>
+                          <ueab:DeleteColumnX ColumnName="선택" DisplayName="Delete Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="452,222" sap2010:WorkflowViewState.IdRef="DeleteColumnX_2" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" />
+                          <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="452,170" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;).Range(&quot;A:O&quot;)]" SaveTo="[dtResult]" />
+                          <If Condition="[dtResult.Rows.Count &gt; 0]" sap:VirtualizedContainerService.HintSize="452,1396" sap2010:WorkflowViewState.IdRef="If_1">
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,842" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="sd2:DataTable" Name="dtMail" />
+                                  <Variable x:TypeArguments="x:String" Name="mailbody" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="sd2:DataTable">[dtMail]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="sd2:DataTable">[dtResult.DefaultView.ToTable(False, "계산서번호", "거래처코드", "거래처명", "VAT구분", "공급가액", "VAT", "10%-VAT", "담당자")]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[mailbody]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String" xml:space="preserve">["&lt;p style='font-family:Malgun Gothic,sans-serif;font-size:13px'&gt;10%-VAT 5000원 이상 내역은 총 " + dtMail.Rows.Count.ToString + "건입니다.&lt;/p&gt;" +
+"&lt;table cellspacing='0' cellpadding='0' style='border-collapse:collapse;font-family:Malgun Gothic,sans-serif;font-size:12px'&gt;&lt;tr&gt;" +
+String.Join("", dtMail.Columns.Cast(Of DataColumn).Select(Function(c) "&lt;th style='background-color:#f2f2f2;border:1px solid #d9d9d9;padding:4px 8px;text-align:center'&gt;" + c.ColumnName + "&lt;/th&gt;")) + "&lt;/tr&gt;" +
+String.Join("", dtMail.AsEnumerable.Select(Function(r) "&lt;tr&gt;" + String.Join("", r.ItemArray.Select(Function(v) "&lt;td style='border:1px solid #d9d9d9;padding:4px 8px'&gt;" + System.Net.WebUtility.HtmlEncode(v.ToString) + "&lt;/td&gt;")) + "&lt;/tr&gt;")) +
+"&lt;/table&gt;"]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" Email="{x:Null}" From="{x:Null}" IgnoreCRL="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Action="Forward" AttachmentInputMode="Existing" Body="[mailbody]" ConnectionId="03efe0ed-7b9d-4274-9e23-beba321f0ca3" ConnectionMode="IntegrationService" CreatedAfterSolutionSupport="True" DisplayName="Send SMTP Email" EnableSSL="True" sap:VirtualizedContainerService.HintSize="416,432" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="True" SecureConnection="Auto" Subject="[RPA 알림] 부가세 5000이상 차이 결과" To="hbchoi@boratr.co.kr" UseISConnection="True" UseRichTextEditor="True">
+                                  <ui:SendMail.AttachmentsBackup>
+                                    <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
+                                      <usau:BackupSlot.BackupValues>
+                                        <scg:Dictionary x:TypeArguments="umame:AttachmentInputMode, scg:List(x:Object)" />
+                                      </usau:BackupSlot.BackupValues>
+                                    </usau:BackupSlot>
+                                  </ui:SendMail.AttachmentsBackup>
+                                  <ui:SendMail.ConnectionDetailsBackupSlot>
+                                    <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="IntegrationService">
+                                      <usau:BackupSlot.BackupValues>
+                                        <scg:List x:TypeArguments="x:Object" x:Key="IntegrationService" Capacity="1">
+                                          <x:String>8efbd09f-abce-4f3b-9d1e-c532ef5ccd4e</x:String>
+                                        </scg:List>
+                                        <scg:List x:TypeArguments="x:Object" x:Key="LegacyConfiguration" Capacity="7">
+                                          <x:Null />
+                                          <x:Null />
+                                          <x:Null />
+                                          <x:Null />
+                                          <x:Null />
+                                          <x:Null />
+                                          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                        </scg:List>
+                                      </usau:BackupSlot.BackupValues>
+                                    </usau:BackupSlot>
+                                  </ui:SendMail.ConnectionDetailsBackupSlot>
+                                  <ui:SendMail.Files>
+                                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                  </ui:SendMail.Files>
+                                </ui:SendMail>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,392" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" Email="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Action="Forward" AttachmentInputMode="Existing" Body="금일 조회 결과 10%-VAT 5000원 이상인 내역이 없습니다." ConnectionId="03efe0ed-7b9d-4274-9e23-beba321f0ca3" ConnectionMode="IntegrationService" CreatedAfterSolutionSupport="True" DisplayName="Send SMTP Email" EnableSSL="True" sap:VirtualizedContainerService.HintSize="416,332" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" SecureConnection="Auto" Subject="[RPA 알림] 부가세 5000이상 차이 없음" To="hbchoi@boratr.co.kr" UseISConnection="True" UseRichTextEditor="True">
+                                  <ui:SendMail.AttachmentsBackup>
+                                    <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
+                                      <usau:BackupSlot.BackupValues>
+                                        <scg:Dictionary x:TypeArguments="umame:AttachmentInputMode, scg:List(x:Object)" />
+                                      </usau:BackupSlot.BackupValues>
+                                    </usau:BackupSlot>
+                                  </ui:SendMail.AttachmentsBackup>
+                                  <ui:SendMail.ConnectionDetailsBackupSlot>
+                                    <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="IntegrationService">
+                                      <usau:BackupSlot.BackupValues>
+                                        <scg:Dictionary x:TypeArguments="umae:ConnectionDetails, scg:List(x:Object)" />
+                                      </usau:BackupSlot.BackupValues>
+                                    </usau:BackupSlot>
+                                  </ui:SendMail.ConnectionDetailsBackupSlot>
+                                  <ui:SendMail.Files>
+                                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                  </ui:SendMail.Files>
+                                </ui:SendMail>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelApplicationCard.Body>
+                  </ueab:ExcelApplicationCard>
+                </Sequence>
+              </ActivityAction>
+            </ueab:ExcelProcessScopeX.Body>
+          </ueab:ExcelProcessScopeX>
+        </Sequence>
+      </FlowStep>
+      <FlowStep>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">95,35</av:Point>
+            <av:Size x:Key="ShapeSize">110,70</av:Size>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence DisplayName="매출,출하 금액대조" sap:VirtualizedContainerService.HintSize="650,1876" sap2010:WorkflowViewState.IdRef="Sequence_35">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="filepath" />
+            <Variable x:TypeArguments="x:String" Name="firstday" />
+            <Variable x:TypeArguments="x:String" Name="lastday" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="616,175" sap2010:WorkflowViewState.IdRef="Assign_10">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[firstday]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[New DateTime(Now.Year, Now.Month, 1).AddMonths(-1).ToString("yyyy-MM-dd")]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="616,175" sap2010:WorkflowViewState.IdRef="Assign_11">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[lastday]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[New DateTime(Now.Year, Now.Month, 1).AddDays(-1).ToString("yyyy-MM-dd")]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Assign sap:VirtualizedContainerService.HintSize="616,175" sap2010:WorkflowViewState.IdRef="Assign_9">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[filepath]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[System.IO.Path.Combine("C:\Users\보라티알\Documents\UiPath\출하리스트\출하데이터_" + firstday + "_" + lastday + ".csv")]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="616,1291" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+            <ueab:ExcelProcessScopeX.Body>
+              <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="522,1221" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ueab:ExcelApplicationCard DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="488,1161" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="[filepath]">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="486,941" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ueab:AutoFitX Columns="True" DisplayName="Autofit Range" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="AutoFitX_1" Range="[Excel.Sheet(&quot;출하데이터_&quot; + firstday + &quot;_&quot; + lastday).Range(&quot;E:G&quot;)]" Rows="True" />
+                          <ueab:FormatRangeX Alignment="{x:Null}" Font="{x:Null}" DisplayName="Format Cells" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="FormatRangeX_3" Range="[Excel.Sheet(&quot;출하데이터_&quot; + firstday + &quot;_&quot; + lastday).Range(&quot;A2:A1100&quot;)]">
+                            <ueab:FormatRangeX.Format>
+                              <ueab:CustomFormat FormatAsString="yyyy-mm-dd" />
+                            </ueab:FormatRangeX.Format>
+                          </ueab:FormatRangeX>
+                          <ueab:InsertColumnX ColumnFormat="{x:Null}" DisplayName="Insert Column" HasHeaders="True" sap:VirtualizedContainerService.HintSize="452,325" sap2010:WorkflowViewState.IdRef="InsertColumnX_3" NewColumnName="매출관리합계금액" Range="[Excel.Sheet(&quot;출하데이터_&quot; + firstday + &quot;_&quot; + lastday)]" RelativeColumnName="합계금액" RelativePosition="After" />
+                          <ueab:ExcelApplicationCard DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="452,310" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="[Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + &quot;\Downloads&quot;, Now.ToString(&quot;yyyyMMdd&quot;) + &quot;*.xls&quot;).OrderByDescending(Function(f) File.GetLastWriteTime(f)).FirstOrDefault()]">
+                            <ueab:ExcelApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Sequence>
+                              </ActivityAction>
+                            </ueab:ExcelApplicationCard.Body>
+                          </ueab:ExcelApplicationCard>
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelApplicationCard.Body>
+                  </ueab:ExcelApplicationCard>
+                </Sequence>
+              </ActivityAction>
+            </ueab:ExcelProcessScopeX.Body>
+          </ueab:ExcelProcessScopeX>
+        </Sequence>
+      </FlowStep>
+    </Flowchart>
+  </Sequence>
+</Activity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YtaTSJSWKk24QLHZzZl-RQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="downloads" DesignTimeRectangle="1282, 352, 25, 26" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='다운로드 기록' role='document' /&gt;&lt;ctrl name='오늘 안전하지 않은 다운로드가 차단됨 출하데이터_2026-09-01_2026-09-30 (4).csv 출처: htt*' role='row' /&gt;&lt;ctrl name='다운로드 링크 복사 추가 작업 기록에서 삭제' role='cell' /&gt;&lt;ctrl name='추가 작업' role='menu button' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;" Guid="b38c4254-5eb7-4dcf-ae90-1905e0c1b5dd" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='다운로드 기록 - Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4b46b1b8a31203c82511891c90a5fd4d.jpg" xmlns="">06V19yLuioUaF-ipp9DJyZQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

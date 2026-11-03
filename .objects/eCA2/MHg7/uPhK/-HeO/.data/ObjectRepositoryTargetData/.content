@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SUCklcTjVUirVQt6EKlWbA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="100, 523, 43, 25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='P_SA_IVMNG' /&gt;&lt;wnd ctrlname='mDataArea' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='splitContainer1' /&gt;&lt;wnd ctrlname='m_pnlHead' /&gt;&lt;wnd ctrlname='_flexH' /&gt;&lt;ctrl name='2' role='row' /&gt;&lt;ctrl name='Column 0' role='row header' /&gt;" Guid="841e70d1-f010-4100-b55a-7a737e19a027" ScopeSelectorArgument="&lt;wnd app='neoweb.exe' cls='HwndWrapper*' title='ERP iU' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="e9becc9e6bb98f6726c11581aff0ecd9.jpg" xmlns="">0c_8g03jJA0OOECkbrdcIZw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

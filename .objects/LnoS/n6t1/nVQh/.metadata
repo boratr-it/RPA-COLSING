@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome 로그인  Bora DataLab",
+  "Type": "Screen",
+  "Id": "nVQhxzQ45E6eID5rQmY3RQ",
+  "Reference": "lpYaik0uEUO09nbSFTgKbg/nVQhxzQ45E6eID5rQmY3RQ",
+  "ParentRef": "lpYaik0uEUO09nbSFTgKbg/n6t1jDR1JkiVclyZAngXlg",
+  "Created": "2026-10-21T08:07:19.5290581Z",
+  "Updated": "2026-10-21T08:07:19.5290581Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.9.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
